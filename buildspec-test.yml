@@ -9,6 +9,6 @@ artifacts:
   files:
   - '**/*'
   secondary-artifacts:
-  - name: dockerImage
-    files:
-    - /tmp/dockerImage
+    dockerImage:
+      files:
+      - /tmp/dockerImage
