@@ -8,7 +8,7 @@ phases:
 artifacts:
   files:
   - '**/*'
-  secondaryArtifacts:
+  secondary-artifacts:
   - name: dockerImage
     files:
     - /tmp/dockerImage
