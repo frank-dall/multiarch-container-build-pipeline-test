@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+    - echo 'tests completed at `date`'
+
+artifacts:
+  files:
+  - '**/*'
+  secondaryArtifacts:
+  - name: dockerImage
+    files:
+    - /tmp/dockerImage
