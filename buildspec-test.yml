@@ -3,13 +3,5 @@ version: 0.2
 phases:
   build:
     commands:
-    - cat /tmp/dockerImage
+    - env | grep CODEBUILD
     - echo 'tests completed at `date`'
-
-artifacts:
-  files:
-  - '**/*'
-  secondary-artifacts:
-    dockerImage:
-      files:
-      - /tmp/dockerImage
